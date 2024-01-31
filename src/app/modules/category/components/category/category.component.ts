@@ -48,7 +48,7 @@ export class CategoryComponent implements OnInit{
 
     if( resp.metadata[0].code == "00") {
 
-      let listCategory = resp.categoryResponse.category;
+      let listCategory = resp.categoryResponseList.categories;
 
       listCategory.forEach((element: CategoryElement) => {
         dataCategory.push(element);
